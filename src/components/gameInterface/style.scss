@@ -1,0 +1,11 @@
+.game-interface {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 3rem 0;
+  padding: 0 1rem;
+  min-width: 500px;
+  border-radius: 1rem;
+}

@@ -1,0 +1,25 @@
+@mixin box-neon {
+  box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff, 0 0 5px #210fca,
+    0 0 5px #210fca, 0 0 10px #210fca;
+}
+
+.win-massage-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(#1f2937, 0.8);
+  max-width: 100%;
+  padding: 3em;
+  border-radius: 2rem;
+  @include box-neon;
+
+  .win-massage {
+    font-size: 4rem;
+  }
+
+  h2{
+    color: rgb(202, 185, 248);
+  }
+}

@@ -1,0 +1,12 @@
+.board-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem;
+  width: 860px;
+  background: rgba(#1f2937, 0.8);
+  border-radius: 1rem;
+}

@@ -1,0 +1,46 @@
+Неонова карточна гра на пам’ять
+Основні моменти:
+
+1.	Стартова сторінка – параметри. Приклад:
+https://www.youtube.com/watch?v=9VSGuga67vI&ab_channel=danascript
+уточнення: 
+•	прибрати вибір категорії
+•	максимальна кількість карточок – 9
+•	при виборі складності регулювати час показу карток
+easy – 10s
+medium – 6s
+hard – 3s
+pro -не показувати картки
+*час можеш змінювати на свій розсуд
+
+2.	Послідовність гри:
+•	Після налаштування параметрів показувати картки стільки часу, скільки задано
+
+•	Час пройде – картки перевертаються і починається відлік (знизу поля повинен бути таймер)
+
+•	Знайдена пара підсвічується зеленим (додаєш тіні зелені), відповідно неправильна – червоним. Приклад:
+https://www.youtube.com/watch?v=qhOZoJPMg6w&ab_channel=AngleBrace
+
+•	Після виграшу гравця знизу показати повідомлення «Congratulation! Your score: *витрачений час*». Додати кнопку reset, яка повертає на стартовий екран
+
+Дизайн:
+1.	background-color: #18191a
+2.	Title&fonts  - “Card MEMory Game”
+
+ https://fonts.google.com/specimen/Tilt+Neon
+
+https://codepen.io/silvia-odwyer/pen/RwKMOpb
+
+color: #8a1931
+
+3.	Subtitle 
+https://codepen.io/silvia-odwyer/pen/yLgKePK
+color: #210fca
+
+4.	Button “reset”
+https://codepen.io/elwinvdhazel/pen/VzwzWK
+color: #8a1931
+
+5.	Game zone:
+https://www.youtube.com/watch?v=S1Bb_UDWkW0&ab_channel=CodinginPublic
+	background-color: #1f2937

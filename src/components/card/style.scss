@@ -1,0 +1,47 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  background: linear-gradient(to bottom right, #908e8e, #6b75a5, #506ce7);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &.flip {
+    transform: rotateY(-180deg);
+  }
+
+  .card-front,
+  .card-back {
+    position: absolute;
+    backface-visibility: hidden;
+    img {
+      width: 80px;
+      opacity: 0.9;
+      display: block;
+    }
+  }
+
+  .card-back {
+    transform: rotateY(180deg);
+    background-size: cover;
+    img {
+      border-radius: 0.8rem;
+      width: 100%;
+      background-size: contain;
+      opacity: 0.9;
+    }
+  }
+
+  &[aria-disabled="true"] {
+    pointer-events: none;
+  }
+}
